@@ -24,7 +24,7 @@ export class NotifycationConfig implements INotifycationConfig {
     this.clickToDismiss = config.clickToDismiss || true;
     this.showCloseIcon = config.showCloseIcon || false;
     this.timeout = config.timeout || 5000;
-    this.position = config.position || 'top';
+    this.position = config.position || 'bottom';
     this.class = config.class || null;
     this.pauseOnHover = config.pauseOnHover || true;
     this.showTimer = config.showTimer || true;

@@ -15,7 +15,7 @@ import {trigger, style, animate, transition} from '@angular/animations';
       </div>
     </div>
   `,
-  styleUrls: ['./notify.scss'],
+  styleUrls: ['./notify.css'],
   animations: [
     trigger('animate', [
       transition('void -> fade', [

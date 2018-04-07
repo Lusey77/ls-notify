@@ -1,57 +1,104 @@
-/*
-Error: File to import not found or unreadable: mixins.sc.
-        on line 2 of notify.scss
+.ls-notification {
+  color: #FFF;
+  cursor: default;
+  font-size: 1.3em;
+  opacity: 1;
+  padding: 25px 80px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 9999;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
-1: @import 'themes.scss';
-2: @import 'mixins.sc';
-3: 
-4: .ls-notify {
-5:   color: #FFF;
-6:   cursor: default;
-7:   font-size: 1.3em;
+.ls-dismiss-icon {
+  position: absolute;
+  top: -1px;
+  left: 6px; }
 
-Backtrace:
-notify.scss:2
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:67:in `rescue in import'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:45:in `import'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:28:in `imported_file'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:37:in `css_import?'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin.rb:82:in `update_stylesheets'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:51:in `process_result'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/exec/base.rb:52:in `parse'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/exec/base.rb:19:in `parse!'
-E:/ProgramFiles/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/bin/scss:13:in `<top (required)>'
-E:/ProgramFiles/Ruby24-x64/bin/scss:23:in `load'
-E:/ProgramFiles/Ruby24-x64/bin/scss:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: mixins.sc.\A         on line 2 of notify.scss\A \A 1: @import 'themes.scss';\A 2: @import 'mixins.sc';\A 3: \A 4: .ls-notify {\A 5:   color: #FFF;\A 6:   cursor: default;\A 7:   font-size: 1.3em;"; }
+.ls-dismiss {
+  background-color: #333;
+  border-radius: 15px;
+  box-shadow: inset 2px 2px 7px 2px #000;
+  color: #DDD;
+  cursor: pointer;
+  display: none;
+  font-size: 1.25em;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  opacity: 0.2;
+  position: absolute;
+  right: 40px;
+  text-shadow: 1px 1px 5px #000;
+  top: 25px;
+  width: 30px; }
+
+.ls-dismiss:hover {
+  background-color: #000; }
+
+.ls-dismiss:active {
+  background-color: #666; }
+
+.ls-top {
+  top: 0; }
+
+.ls-bottom {
+  bottom: 0; }
+
+.ls-clickable {
+  cursor: pointer; }
+
+@media only screen and (max-width: 480px) {
+  .ls {
+    font-size: 1em;
+    padding: 12px 25px; }
+
+  .ls-dismiss {
+    font-size: 1em;
+    height: 20px;
+    line-height: 20px;
+    right: 5px;
+    top: 5px;
+    width: 20px; } }
+.theme-default .ls-info {
+  background-color: #0e90d2; }
+.theme-prime .ls-info {
+  background-color: #0033cc; }
+.theme-pastel .ls-info {
+  background-color: #7EA7D8; }
+.theme-dark .ls-info {
+  background-color: #003471; }
+
+.theme-default .ls-error {
+  background-color: #dd514c; }
+.theme-prime .ls-error {
+  background-color: #ff0000; }
+.theme-pastel .ls-error {
+  background-color: #F6989D; }
+.theme-dark .ls-error {
+  background-color: #9E0B0F; }
+
+.theme-default .ls-success {
+  background-color: #5eb95e; }
+.theme-prime .ls-success {
+  background-color: #00cc00; }
+.theme-pastel .ls-success {
+  background-color: #82CA9D; }
+.theme-dark .ls-success {
+  background-color: #007236; }
+
+.theme-default .ls-grimace {
+  background-color: #8058a5; }
+.theme-prime .ls-grimace {
+  background-color: #660099; }
+.theme-pastel .ls-grimace {
+  background-color: #A187BE; }
+.theme-dark .ls-grimace {
+  background-color: #440E62; }
+
+/*# sourceMappingURL=notify.css.map */
