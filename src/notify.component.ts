@@ -8,7 +8,7 @@ import {trigger, style, animate, transition} from '@angular/animations';
 @Component({
   selector: 'ls-notify',
   template: `
-    <div [@animate]="animation" class="ls-notification" [ngClass]="class" *ngIf="notification" (click)="handleClick()" #notification>
+    <div [@animate]="animation" [ngClass]="class" *ngIf="notification" (click)="handleClick()" #notification>
       <span class="ls-message" [innerHTML]="message"></span>
       <div class="ls-dismiss" *ngIf="config.showCloseIcon" (click)="clearNotification(true)">
         <span class="ls-dismiss-icon">&times;</span>
