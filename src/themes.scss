@@ -1,0 +1,51 @@
+$themes: (
+  default: (
+    bg-color-info: #0e90d2,
+    bg-color-error: #dd514c,
+    bg-color-success: #5eb95e,
+    bg-color-warning: #f37b1d,
+    bg-color-grimace: #8058a5
+  ),
+  prime: (
+    bg-color-info: #0033cc,
+    bg-color-error: #ff0000,
+    bg-color-success: #00cc00,
+    bg-color-warning: #ff9900,
+    bg-color-grimace: #660099
+  ),
+  pastel: (
+    bg-color-info: #7EA7D8,
+    bg-color-error: #F6989D,
+    bg-color-success: #82CA9D,
+    bg-color-warning: #FDC68A,
+    bg-color-grimace: #A187BE
+  ),
+  dark: (
+    bg-color-info: #003471,
+    bg-color-error: #9E0B0F,
+    bg-color-success: #007236,
+    bg-color-warning: #A36209,
+    bg-color-grimace: #440E62
+  )
+);
+
+@mixin themify($themes: $themes) {
+  @each $theme, $map in $themes {
+
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+
+      @content;
+      $theme-map: null !global;
+    }
+
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}

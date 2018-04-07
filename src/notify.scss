@@ -1,0 +1,107 @@
+@import 'themes.scss';
+@import 'mixins.scss';
+
+.ls-notify {
+  color: #FFF;
+  cursor: default;
+  font-size: 1.3em;
+  opacity: 1;
+  padding: 25px 80px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 9999;
+  @include user-select(none);
+}
+
+.ls-dismiss-icon {
+  position: absolute;
+  top: -1px;
+  left: 6px;
+}
+
+.ls-dismiss {
+  background-color: #333;
+  border-radius: 15px;
+  box-shadow: inset 2px 2px 7px 2px #000;
+  color: #DDD;
+  cursor: pointer;
+  display: none;
+  font-size: 1.25em;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  opacity: 0.2;
+  position: absolute;
+  right: 40px;
+  text-shadow: 1px 1px 5px #000;
+  top: 25px;
+  width: 30px;
+}
+
+.ls-dismiss:hover {
+  background-color: #000;
+}
+
+.ls-dismiss:active {
+  background-color: #666;
+}
+
+.ls-top {
+  top: 0;
+}
+
+.ls-bottom {
+  bottom: 0;
+}
+
+.ls-clickable {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  .ls {
+    font-size: 1em;
+    padding: 12px 25px;
+  }
+
+  .ls-dismiss {
+    font-size: 1em;
+    height: 20px;
+    line-height: 20px;
+    right: 5px;
+    top: 5px;
+    width: 20px;
+  }
+}
+
+.ls-info {
+  @include themify($themes) {
+    background-color: themed('bg-color-info');
+  }
+}
+
+.ls-error {
+  @include themify($themes) {
+    background-color: themed('bg-color-error');
+  }
+}
+
+.ls-success {
+  @include themify($themes) {
+    background-color: themed('bg-color-success');
+  }
+}
+
+.ls-warn {
+  @include themify($themes) {
+    background-color: themed('bg-color-warn');
+  }
+}
+
+.ls-grimace {
+  @include themify($themes) {
+    background-color: themed('bg-color-grimace');
+  }
+}

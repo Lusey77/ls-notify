@@ -1,35 +1,34 @@
-import { NgModule, ModuleWithProviders } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { SampleComponent } from './sample.component';
-import { SampleDirective } from './sample.directive';
-import { SamplePipe } from './sample.pipe';
-import { SampleService } from './sample.service';
+import {NgModule, ModuleWithProviders} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {NotifycationComponent} from './notify.component';
+import {NotifycationService} from './notify.service';
 
-export * from './sample.component';
-export * from './sample.directive';
-export * from './sample.pipe';
-export * from './sample.service';
+export * from './notify.component';
+export * from './notify.service';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: [
-    SampleComponent,
-    SampleDirective,
-    SamplePipe
-  ],
-  exports: [
-    SampleComponent,
-    SampleDirective,
-    SamplePipe
-  ]
+    imports: [
+        CommonModule
+    ],
+    declarations: [
+        NotifycationComponent
+    ],
+    exports: [
+        NotifycationComponent
+    ]
 })
-export class SampleModule {
-  static forRoot(): ModuleWithProviders {
-    return {
-      ngModule: SampleModule,
-      providers: [SampleService]
-    };
-  }
+export class NotifyModule {
+    static forRoot(): ModuleWithProviders {
+        return {
+            ngModule: NotifyModule,
+            providers: [NotifycationService]
+        };
+    }
+
+    static forChild(): ModuleWithProviders {
+        return {
+            ngModule: NotifyModule,
+            providers: []
+        };
+    }
 }
