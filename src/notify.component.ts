@@ -106,6 +106,7 @@ export class NotifycationComponent implements OnInit {
     this.class = `ls-notification ${this.severityClass.get(notification.severity)} ls-${this.config.position}`;
     this.class = this.config.clickToDismiss ? `${this.class} ls-clickable` : this.class;
     this.class = this.config.class ? `${this.class} ${this.config.class}` : this.class;
+    this.class = `${this.class} theme-default`; //TODO: Add themes
   }
 
   setNotificationTimer(notification: Notifycation) {
