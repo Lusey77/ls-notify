@@ -1,4 +1,4 @@
-import {ChangeDetectorRef, Component, Input, OnInit} from '@angular/core';
+import {ChangeDetectorRef, Component, HostBinding, Input, OnInit} from '@angular/core';
 import {Notifycation} from './notify';
 import {NotificationSeverity} from './notify.severity';
 import {NotifycationService} from './notify.service';
@@ -38,6 +38,10 @@ import {trigger, style, animate, transition} from '@angular/animations';
   ]
 })
 export class NotifycationComponent implements OnInit {
+  @HostBinding('class.theme-default') default: boolean = true;
+  @HostBinding('class.theme-pastel') pastel: boolean = false;
+  @HostBinding('class.theme-prime') prime: boolean = false;
+  @HostBinding('class.theme-dark') dark: boolean = false;
   @Input() config: NotifycationConfig = new NotifycationConfig();
   private class: string;
   private animation: string;
@@ -106,7 +110,6 @@ export class NotifycationComponent implements OnInit {
     this.class = `ls-notification ${this.severityClass.get(notification.severity)} ls-${this.config.position}`;
     this.class = this.config.clickToDismiss ? `${this.class} ls-clickable` : this.class;
     this.class = this.config.class ? `${this.class} ${this.config.class}` : this.class;
-    this.class = `${this.class} theme-default`; //TODO: Add themes
   }
 
   setNotificationTimer(notification: Notifycation) {

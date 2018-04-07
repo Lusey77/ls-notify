@@ -1,104 +1,304 @@
 .ls-notification {
-  color: #FFF;
-  cursor: default;
-  font-size: 1.3em;
-  opacity: 1;
-  padding: 25px 80px;
-  position: fixed;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 9999;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
+    color: #FFF;
+    cursor: default;
+    font-size: 1.3em;
+    opacity: 1;
+    padding: 25px 80px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 9999;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
 .ls-dismiss-icon {
-  position: absolute;
-  top: -1px;
-  left: 6px; }
+    position: absolute;
+    top: -1px;
+    left: 6px;
+}
 
 .ls-dismiss {
-  background-color: #333;
-  border-radius: 15px;
-  box-shadow: inset 2px 2px 7px 2px #000;
-  color: #DDD;
-  cursor: pointer;
-  display: none;
-  font-size: 1.25em;
-  font-weight: bold;
-  height: 30px;
-  line-height: 30px;
-  opacity: 0.2;
-  position: absolute;
-  right: 40px;
-  text-shadow: 1px 1px 5px #000;
-  top: 25px;
-  width: 30px; }
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: inset 2px 2px 7px 2px #000;
+    color: #DDD;
+    cursor: pointer;
+    display: none;
+    font-size: 1.25em;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    opacity: 0.2;
+    position: absolute;
+    right: 40px;
+    text-shadow: 1px 1px 5px #000;
+    top: 25px;
+    width: 30px;
+}
 
 .ls-dismiss:hover {
-  background-color: #000; }
+    background-color: #000;
+}
 
 .ls-dismiss:active {
-  background-color: #666; }
+    background-color: #666;
+}
 
 .ls-top {
-  top: 0; }
+    top: 0;
+}
 
 .ls-bottom {
-  bottom: 0; }
+    bottom: 0;
+}
 
 .ls-clickable {
-  cursor: pointer; }
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 480px) {
-  .ls {
-    font-size: 1em;
-    padding: 12px 25px; }
+    .ls {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
 
-  .ls-dismiss {
-    font-size: 1em;
-    height: 20px;
-    line-height: 20px;
-    right: 5px;
-    top: 5px;
-    width: 20px; } }
+    .ls-dismiss {
+        font-size: 1em;
+        height: 20px;
+        line-height: 20px;
+        right: 5px;
+        top: 5px;
+        width: 20px;
+    }
+}
+
 .theme-default .ls-info {
-  background-color: #0e90d2; }
+    background-color: #0e90d2;
+}
+
 .theme-prime .ls-info {
-  background-color: #0033cc; }
+    background-color: #0033cc;
+}
+
 .theme-pastel .ls-info {
-  background-color: #7EA7D8; }
+    background-color: #7EA7D8;
+}
+
 .theme-dark .ls-info {
-  background-color: #003471; }
+    background-color: #003471;
+}
 
 .theme-default .ls-error {
-  background-color: #dd514c; }
+    background-color: #dd514c;
+}
+
 .theme-prime .ls-error {
-  background-color: #ff0000; }
+    background-color: #ff0000;
+}
+
 .theme-pastel .ls-error {
-  background-color: #F6989D; }
+    background-color: #F6989D;
+}
+
 .theme-dark .ls-error {
-  background-color: #9E0B0F; }
+    background-color: #9E0B0F;
+}
 
 .theme-default .ls-success {
-  background-color: #5eb95e; }
+    background-color: #5eb95e;
+}
+
 .theme-prime .ls-success {
-  background-color: #00cc00; }
+    background-color: #00cc00;
+}
+
 .theme-pastel .ls-success {
-  background-color: #82CA9D; }
+    background-color: #82CA9D;
+}
+
 .theme-dark .ls-success {
-  background-color: #007236; }
+    background-color: #007236;
+}
+
+.theme-default .ls-warn {
+    background-color: #f37b1d;
+}
+
+.theme-prime .ls-warn {
+    background-color: #ff9900;
+}
+
+.theme-pastel .ls-warn {
+    background-color: #FDC68A;
+}
+
+.theme-dark .ls-warn {
+    background-color: #A36209;
+}
 
 .theme-default .ls-grimace {
-  background-color: #8058a5; }
+    background-color: #8058a5;
+}
+
 .theme-prime .ls-grimace {
-  background-color: #660099; }
+    background-color: #660099;
+}
+
 .theme-pastel .ls-grimace {
-  background-color: #A187BE; }
+    background-color: #A187BE;
+}
+
 .theme-dark .ls-grimace {
-  background-color: #440E62; }
+    background-color: #440E62;
+}
+
+/*# sourceMappingURL=notify.css.map */
+.ls-notification[_ngcontent-c5] {
+    color: #FFF;
+    cursor: default;
+    font-size: 1.3em;
+    opacity: 1;
+    padding: 25px 80px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 9999;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ls-dismiss-icon[_ngcontent-c5] {
+    position: absolute;
+    top: -1px;
+    left: 6px;
+}
+
+.ls-dismiss[_ngcontent-c5] {
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: inset 2px 2px 7px 2px #000;
+    color: #DDD;
+    cursor: pointer;
+    display: none;
+    font-size: 1.25em;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    opacity: 0.2;
+    position: absolute;
+    right: 40px;
+    text-shadow: 1px 1px 5px #000;
+    top: 25px;
+    width: 30px;
+}
+
+.ls-dismiss[_ngcontent-c5]:hover {
+    background-color: #000;
+}
+
+.ls-dismiss[_ngcontent-c5]:active {
+    background-color: #666;
+}
+
+.ls-top[_ngcontent-c5] {
+    top: 0;
+}
+
+.ls-bottom[_ngcontent-c5] {
+    bottom: 0;
+}
+
+.ls-clickable[_ngcontent-c5] {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+    .ls[_ngcontent-c5] {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+
+    .ls-dismiss[_ngcontent-c5] {
+        font-size: 1em;
+        height: 20px;
+        line-height: 20px;
+        right: 5px;
+        top: 5px;
+        width: 20px;
+    }
+}
+
+.theme-default[_ngcontent-c5]   .ls-info[_ngcontent-c5] {
+    background-color: #0e90d2;
+}
+
+.theme-prime[_ngcontent-c5]   .ls-info[_ngcontent-c5] {
+    background-color: #0033cc;
+}
+
+.theme-pastel[_ngcontent-c5]   .ls-info[_ngcontent-c5] {
+    background-color: #7EA7D8;
+}
+
+.theme-dark[_ngcontent-c5]   .ls-info[_ngcontent-c5] {
+    background-color: #003471;
+}
+
+.theme-default[_ngcontent-c5]   .ls-error[_ngcontent-c5] {
+    background-color: #dd514c;
+}
+
+.theme-prime[_ngcontent-c5]   .ls-error[_ngcontent-c5] {
+    background-color: #ff0000;
+}
+
+.theme-pastel[_ngcontent-c5]   .ls-error[_ngcontent-c5] {
+    background-color: #F6989D;
+}
+
+.theme-dark[_ngcontent-c5]   .ls-error[_ngcontent-c5] {
+    background-color: #9E0B0F;
+}
+
+.theme-default[_ngcontent-c5]   .ls-success[_ngcontent-c5] {
+    background-color: #5eb95e;
+}
+
+.theme-prime[_ngcontent-c5]   .ls-success[_ngcontent-c5] {
+    background-color: #00cc00;
+}
+
+.theme-pastel[_ngcontent-c5]   .ls-success[_ngcontent-c5] {
+    background-color: #82CA9D;
+}
+
+.theme-dark[_ngcontent-c5]   .ls-success[_ngcontent-c5] {
+    background-color: #007236;
+}
+
+.theme-default[_ngcontent-c5]   .ls-grimace[_ngcontent-c5] {
+    background-color: #8058a5;
+}
+
+.theme-prime[_ngcontent-c5]   .ls-grimace[_ngcontent-c5] {
+    background-color: #660099;
+}
+
+.theme-pastel[_ngcontent-c5]   .ls-grimace[_ngcontent-c5] {
+    background-color: #A187BE;
+}
+
+.theme-dark[_ngcontent-c5]   .ls-grimace[_ngcontent-c5] {
+    background-color: #440E62;
+}
 
 /*# sourceMappingURL=notify.css.map */
