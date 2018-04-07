@@ -18,23 +18,21 @@ import {trigger, style, animate, transition} from '@angular/animations';
   styleUrls: ['./notify.scss'],
   animations: [
     trigger('animate', [
-      trigger('animate', [
-        transition('void -> fade', [
-          style({opacity: 0}),
-          animate(500, style({opacity: 1}))
-        ]),
-        transition('fade -> void', [
-          style({opacity: 1}),
-          animate(500, style({opacity: 0}))
-        ]),
-        transition('void -> slide', [
-          style({opacity: 1, transform: 'translateY(100%)'}),
-          animate('500ms ease-in', style({transform: 'translateY(0)'}))
-        ]),
-        transition('slide -> void', [
-          style({opacity: 1, transform: 'translateY(0)'}),
-          animate('500ms ease-out', style({transform: 'translateY(100%)'}))
-        ])
+      transition('void -> fade', [
+        style({opacity: 0}),
+        animate(500, style({opacity: 1}))
+      ]),
+      transition('fade -> void', [
+        style({opacity: 1}),
+        animate(500, style({opacity: 0}))
+      ]),
+      transition('void -> slide', [
+        style({opacity: 1, transform: 'translateY(100%)'}),
+        animate('500ms ease-in', style({transform: 'translateY(0)'}))
+      ]),
+      transition('slide -> void', [
+        style({opacity: 1, transform: 'translateY(0)'}),
+        animate('500ms ease-out', style({transform: 'translateY(100%)'}))
       ])
     ])
   ]
