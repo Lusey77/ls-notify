@@ -6,10 +6,10 @@
             user-select: $value;
 }
 
-@mixin animation($animation, $duraction) {
-  -webkit-animation: $animation $duraction;
-     -moz-animation: $animation $duraction;
-       -o-animation: $animation $duraction;
-          animation: $animation $duraction;
+@mixin animation($animation, $duration) {
+  -webkit-animation: $animation $duration;
+     -moz-animation: $animation $duration;
+       -o-animation: $animation $duration;
+          animation: $animation $duration;
 }
 

@@ -38,10 +38,10 @@ import {trigger, style, animate, transition} from '@angular/animations';
   ]
 })
 export class NotifycationComponent implements OnInit {
-  @HostBinding('class.theme-default') default: boolean = true;
-  @HostBinding('class.theme-pastel') pastel: boolean = false;
-  @HostBinding('class.theme-prime') prime: boolean = false;
-  @HostBinding('class.theme-dark') dark: boolean = false;
+  @HostBinding('class.::ng-deep theme-default') default: boolean = true;
+  @HostBinding('class.::ng-deep theme-pastel') pastel: boolean = false;
+  @HostBinding('class.::ng-deep theme-prime') prime: boolean = false;
+  @HostBinding('class.::ng-deep theme-dark') dark: boolean = false;
   @Input() config: NotifycationConfig = new NotifycationConfig();
   private class: string;
   private animation: string;
